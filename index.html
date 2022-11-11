@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script type="text/javascript">
+var y = Number(prompt('Введите значение y'));
+var browser, uAgent = navigator.userAgent;
+if(uAgent.indexOf ("Chrome") > -1){
+browser = 4*y-1;
+}else if (uAgent.indexOf ("Firefox") > -1){
+browser = -3*y+9;
+}else if (uAgent.indexOf ("Opera") > -1){
+browser = (y**2)-9;
+}else if (uAgent.indexOf ("Microsoft Edge") > -1){
+browser = 10*(y**2);
+}
+document.write(browser);
+</script>
+<body>
+</body>
+</html>
